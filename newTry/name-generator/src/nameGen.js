@@ -1,9 +1,9 @@
 const vowels = ["a", "e", "i", "o", "u"]
 const consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "x", "y", "w", "z"]
 
-function wordGenerator(syllableAmount) {
+export function wordGenerator1(syllableAmount) {
     let newWord = ''
-    for (i = 0; i < syllableAmount; i++) {
+    for (let i = 0; i < syllableAmount; i++) {
         newWord += syllableGenerator()
     }
 
@@ -27,4 +27,4 @@ function randomNumberPositionInVector(vector) {
 }
 
 
-console.log(wordGenerator(2))
+// console.log(wordGenerator(2))
